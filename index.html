@@ -11,9 +11,50 @@
 <body>
 <h2>Get started</h2>
 <p>Create your own account now</p>
-<label for="fullname">Full name</label>
-<input type="text" id="fullname">
-
-
+<form method="post">
+    <label for="fullname">Full name</label>
+    <input type="text" name="fullname" id="fullname"
+           required
+           maxlength="50">
+    <br>
+    <label for="age">How old are you?</label>
+    <input type="number" name="age" id="age"
+           required
+           minlength="18"
+           maxlength="120">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+    <select name="Favourite day in a week.">
+        <optgroup label="Work days">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </optgroup>
+        <optgroup label="Weekends">
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password"
+           required
+           minlength="8">
+    <br>
+    <label for="repassword">Recheck password</label>
+    <input type="password" name="repassword" id="repassword"
+           required
+           minlength="8">
+    <br>
+    <label for="rights">Souhlasím se zpracováním mých osobních údajů za účelem založení účtu.</label>
+    <input type="checkbox" name="rights" id=rights required>
+    <br>
+    <input type="submit" value="Sign up">
+</form>
+<p>Already have an account? <a href="#">Login</a></p>
 </body>
 </html>
