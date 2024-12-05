@@ -10,53 +10,55 @@
 </head>
 <body>
 <h2>Get started</h2>
-    <p id="para">Create your own account now</p>
-    <form method="post">
-        <label for="fullname">Full name</label>
-        <input type="text" name="fullname" id="fullname"
-               required
-               maxlength="50">
+<p id="para">Create your own account now</p>
+<form method="post">
+    <label for="fullname">Full name</label>
+    <input type="text" name="fullname" id="fullname"
+           required
+           maxlength="50">
+    <br>
+    <label for="age">How old are you?</label>
+    <input type="number" name="age" id="age"
+           required
+           minlength="18"
+           maxlength="120">
+    <br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" required>
+    <br>
+    <label for="day">Choose your favourite day</label>
+    <select name="day" id="day">
+        <optgroup label="Work days">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+        </optgroup>
+        <optgroup label="Weekends">
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </optgroup>
+    </select>
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password"
+           required
+           minlength="8">
+    <br>
+    <label for="repassword">Recheck password</label>
+    <input type="password" name="repassword" id="repassword"
+           required
+           minlength="8">
+    <br>
+    <label for="rights">
+        <input type="checkbox" name="rights" id=rights required>
+        I consent to the processing of my personal data
         <br>
-        <label for="age">How old are you?</label>
-        <input type="number" name="age" id="age"
-               required
-               minlength="18"
-               maxlength="120">
-        <br>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-        <br>
-        <label for="day">Choose your favourite day</label>
-        <select name="day" id="day">
-            <optgroup label="Work days">
-                <option value="Monday">Monday</option>
-                <option value="Tuesday">Tuesday</option>
-                <option value="Wednesday">Wednesday</option>
-                <option value="Thursday">Thursday</option>
-                <option value="Friday">Friday</option>
-            </optgroup>
-            <optgroup label="Weekends">
-                <option value="Saturday">Saturday</option>
-                <option value="Sunday">Sunday</option>
-            </optgroup>
-        </select>
-        <br>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password"
-               required
-               minlength="8">
-        <br>
-        <label for="repassword">Recheck password</label>
-        <input type="password" name="repassword" id="repassword"
-               required
-               minlength="8">
-<br>
-<label for="rights">
-    <input type="checkbox" name="rights" id=rights required>
-    Souhlasím se zpracováním mých osobních údajů za účelem založení účtu.
-</label>
-<br>
-<input type="submit" id="singup" value="Sign up">
+        for the purpose of creating an account.
+    </label>
+    <br>
+    <input type="submit" id="singup" value="Sign up">
 </form>
 <p id="login">Already have an account? <a href="#">Login</a></p>
 </body>
