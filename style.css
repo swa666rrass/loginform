@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#fullname {
+    font-size: 17px;
+    border: lightgrey solid 1.5px;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+
+}
+
+#age {
+    font-size: 17px;
+    border: lightgrey solid 1.5px;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+
+#email {
+    font-size: 17px;
+    border: lightgrey solid 1.5px;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+
+#day {
+    font-size: 17px;
+    border: lightgrey solid 1.5px;
+    border-radius: 4px;
+    background-color: white;
+    width: 360px;
+    height: 40px;
+}
+
+#password {
+    font-size: 17px;
+    border: lightgrey solid 1.5px;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+
+#repassword {
+    font-size: 17px;
+    border: lightgrey solid 1.5px;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+
+label {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: grey;
+
+}
+
+#singup {
+    font-size: 17px;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+    border-color: blue;
+    width: 360px;
+    height: 55px;
+}
+
+#para {
+    color: grey;
+}
+
+#login {
+    color: grey;
+    padding-top: 50px;
+}
+
+#login > a {
+    text-decoration: none;
+}
